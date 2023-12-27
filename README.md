@@ -36,3 +36,25 @@ By sticking to these naming conventions, your Python code will be more readable,
 To Run Pre Commit on PyCharm
 Need to create a Symlink to the poetry executable
 `sudo ln -s ~/.local/bin/poetry /usr/local/bin/poetry`
+
+
+
+Things to do:
+- [X] Add a pre-commit hook to run black and isort
+- [ ] Integrate MongoDB
+- [ ] Integrate Redis
+- [ ] Integrate Celery
+- [ ] Integrate RabbitMQ
+- [ ] Integrate Sentry
+- [ ] Integrate Prometheus
+- [ ] Integrate Secret Management
+- [ ] Integrate CI/CD
+- [ ] Integrate Docker
+- [ ] Integrate Logging
+
+
+# Initiate Docker Mongo DB
+# Create a docker image
+docker build -t local-mongo-image .
+# Run the docker image on the port 27017
+docker run -p 27017:27017 local-mongo-image
